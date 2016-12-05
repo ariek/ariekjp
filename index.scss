@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+th, td {
+  vertical-align: top;
+}
+
+body {
+  font-size: 20px;
+  font-family: "游明朝", YuMincho, "游明朝体", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明B", "ＭＳ Ｐ明朝", "MS PMincho", "メイリオ", Meiryo, serif;
+  color: #000;
+  background: #ffffff;
+  -webkit-text-size-adjust: 100%;
+}
+
+table, textarea, select {
+  font-size: inherit;
+  font: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+p, li, td, th, dt, dd, input, textarea, option, address, figcaption {
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: #f33;
+  text-decoration: none;
+  &:hover {
+    color: #f00;
+  }
+}
+
+p, dt, dd, li {
+  letter-spacing: -0.01em;
+}
+
+body > h1 {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 600px;
+  line-height: 255px;
+  font-size: 120px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+
+article {
+  > {
+    h1 {
+      margin-bottom: 30px;
+      border: 1px solid #333;
+      border-width: 4px 0 1px;
+      font-size: 32px;
+      font-family: GEORGIA, "Times New Roman", times, serif;
+      font-weight: normal;
+      letter-spacing: 0.06em;
+      line-height: 2;
+      text-transform: uppercase;
+    }
+    section > h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      letter-spacing: -0.01em;
+      time {
+        letter-spacing: 0.04em;
+      }
+    }
+  }
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 600px;
+}
+
+.show {
+  margin-bottom: 30px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #333;
+  &.past{
+    //margin-bottom: 20px;
+    color: #999;
+    border-bottom: 1px solid #999;
+    //height: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    &.is-show{
+      margin-bottom: 30px;
+      height: auto;
+      overflow: visible;
+    }
+    a{
+      color: #f99;
+    }
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+  p {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  iframe {
+    width: 600px;
+    height: 337px;
+  }
+}
+
+.event {
+  padding: 18px 20px;
+  background: #f2f2f2;
+  font-size: 18px;
+  h1 {
+    margin-bottom: 7px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  time span {
+    margin-right: 10px;
+  }
+  dl {
+    zoom: 1;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  dt, dd {
+    margin-bottom: 2px;
+    float: left;
+  }
+  dt {
+    width: 10%;
+    position: relative;
+    &:after {
+      content: " : ";
+      position: absolute;
+      right: 8px;
+      top: 0;
+    }
+  }
+  dd {
+    width: 90%;
+  }
+  li {
+    display: inline-block;
+    &:after {
+      content: "、";
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+.profile {
+  margin-bottom: 60px;
+}
